@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.geogehigbie.turkeyshoot2.MainActivity">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="layout.FragmentOneBase">
+
+        <ImageView
+            android:id="@+id/turkey_body"
+            android:src="@drawable/turkey_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/sky_gradient"
+                android:layout_alignParentTop="true">
+
+                <FrameLayout
+                    android:id="@+id/sky_path1"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/sky_path2"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/horizon"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/grass"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:background="@drawable/grass_texture"
+                android:layout_above="@+id/wood_base"
+                android:weightSum="4">
+
+
+                <FrameLayout
+                    android:id="@+id/turkey_container1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/turkey_big_color"
+                        />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/turkey_container2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/turkey_big_color"
+                        />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/turkey_container3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/turkey_big_color"
+                        />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/turkey_container4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/turkey_big_color"
+                        />
+                </FrameLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+            <FrameLayout
+                android:id="@+id/wood_base"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@drawable/wood_grain"
+                android:layout_alignParentBottom="true">
+            </FrameLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/big_turkey_body"
+            android:src="@drawable/turkey_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+
+</RelativeLayout>
